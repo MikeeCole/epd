@@ -1,0 +1,22 @@
+input,
+select,
+textarea {
+	background: #fff;
+	
+	&:focus {
+		outline-color: #1a9bd3;
+	}
+} 
+
+form,
+fieldset {
+	margin: 0;
+}
+
+div.errors {
+	color: #bf3d48;
+	
+	&.top {
+		font-size: 1.125em;
+	}
+}

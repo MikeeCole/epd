@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Eclipse Icons';
+    src: url('../fonts/eclipseicons-regular.eot');
+    src: url('../fonts/eclipseicons-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/eclipseicons-regular.woff') format('woff'),
+         url('../fonts/eclipseicons-regular.ttf') format('truetype'),
+         url('../fonts/eclipseicons-regular.svg#eclipse_iconsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icons {
+	font-family: "Eclipse Icons";
+	color: #fff;
+	@include text-shadow(0 1px 1px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.1));
+}
+
+p.intro {
+	font-style: italic;
+	margin-top: 0;
+	font-size: 1.125em;
+
+	@include respond(620px) {
+		font-size: 1em;
+	}
+}

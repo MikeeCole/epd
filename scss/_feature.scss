@@ -1,0 +1,51 @@
+.feature {
+	margin-bottom: 1.5em;
+	z-index: 20;
+	position: relative;
+	@include panel;
+
+	img {
+		display: block;
+		width: 100%;
+		@include box-sizing(border-box);
+
+		@include respond(460px) {
+			@include border-bottom-left-radius(0);
+			@include border-bottom-right-radius(0);
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	span {
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.85);
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+		@include box-sizing(border-box);
+		padding: 0.6em 0;
+		@include border-bottom-left-radius();
+		@include border-bottom-right-radius();
+
+		@include respond(800px) {
+			font-size: 1.6em;
+		}
+
+		@include respond(600px) {
+			font-size: 1.2em;
+		}
+
+		@include respond(460px) {
+			position: static;
+			font-size: 1em;
+		}
+	}
+}

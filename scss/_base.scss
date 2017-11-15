@@ -1,0 +1,71 @@
+html {
+	/*font: normal normal normal 100%/1.5 "Helvetica Neue", Arial, sans-serif;*/
+	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+	color: #4d4f4f;
+	margin: 0;
+	padding: 0 0 110px;
+	background-color: #232323;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	margin: 0 0 110px;
+	padding: 0;
+	border-top: 10px solid $eclipseBlue;
+	background: #eee url("https://eclipsepd.com/assets/img/patterns/grid.png") repeat scroll 50% 50%;
+	@include hidpi("https://eclipsepd.com/img/patterns/grid@2x.png", 310px, 310px);
+	position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    @include grid-container;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    background-color: $testing;    
+    
+    .stage {
+        @include grid-column(12);
+    }
+    
+    .hero {
+        @include grid-column(1, $article-layout-grid);
+    }
+    
+    .columns {
+    }
+    
+    .side-col{
+        @include grid-column(0.38, $article-layout-grid);
+
+        h1 {
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+        }
+        
+        .story {
+            background-color: red;
+            position: relative;
+            bottom: 0;
+            left: 0;   
+            }    
+        
+    .third-col {
+        @include grid-column(0.33, $article-layout-grid);
+        background-color: aqua;
+        }
+    }
+    
+
+        
+    .main-col{
+        @include grid-column(0.618, $article-layout-grid);
+    }
+}
+

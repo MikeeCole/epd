@@ -1,0 +1,147 @@
+header {
+	position: relative;
+	z-index: 10000000;
+	margin: 2em 0 1.5em;
+
+	@include respond(630px) {
+		margin-top: 1.5em;
+	}
+	@include respond(420px) {
+		margin-top: 1em;
+	}
+
+	.logo {
+		max-width: 160px;
+		display: block;
+
+		img {
+			width: 100%;
+		}
+
+		@include respond(630px) {
+			margin: 0 auto 1.5em;
+		}
+
+		@include respond(420px) {
+			max-width: 144px;
+			margin-bottom: 1em;
+		}
+	}
+
+	nav {
+		position: absolute;
+		bottom: 0.4em;
+		right: 0;
+
+		@include respond(630px) {
+			position: static;
+			width: 100%;
+		}
+
+		a {
+			color: #fff;
+			background-color: $eclipseBlue;
+			padding: 0.25em 0.8em;
+			display: inline-block;
+
+			@include respond(630px) {
+				display: block;
+				text-align: center;
+			}
+
+			@include respond(420px) {
+				padding: 0.35em 0.6em;
+			}
+		}
+
+		ul {
+			@include clearfix;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			font-size: 1.0625em;
+
+			@include respond(420px) {
+				font-size: 0.95em;
+			}
+		}
+
+		li {
+			@include box-sizing(border-box);
+			float: left;
+			border-left: 1px solid transparent;
+			position: relative;
+
+			@include respond(630px) {
+				&.nav-areas,
+				&.nav-about {
+					width: 20.9%;
+				}
+				&.nav-stories {
+					width: 24.2%;
+				}
+				&.nav-client-login {
+					width: 34%;
+				}
+			}
+
+			ul {
+				display: none;
+				background-color: #fff;
+			}
+
+			&:hover {
+				a {
+					text-decoration: none;
+					background-color: $eclipseBlueHover;
+					color: #fff;
+				}
+
+				ul {
+					display: block;
+					position: absolute;
+					top: 1.9em;
+					left: -1px;
+					width: 12em;
+				}
+
+				li {
+					float: none;
+					margin-bottom: 1px;
+					font-size: 0.9em;
+					border-right: 1px solid #fff;
+
+					a {
+						white-space: nowrap;
+						display: block;
+						background-color: $eclipseBlue;
+
+						&:hover {
+							background-color: $eclipseBlueHover;
+						}
+					}
+				}
+
+				@include respond(630px) {
+					ul {
+						top: 1.95em;
+
+						a {
+							text-align: left;
+						}
+					}
+				}
+
+				@include respond(440px) {
+					ul {
+						top: 2.35em;
+
+						li {
+							font-size: 0.95em;
+						}
+					}
+				}
+			}
+		}
+	}
+}

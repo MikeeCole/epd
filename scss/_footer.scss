@@ -1,0 +1,189 @@
+footer {
+	text-align: left;
+	min-height: 11.875em;
+	max-width: 60em;
+	width: 98%;
+	top: 110px;
+	position: relative;
+	margin: -104px auto -110px;
+	background: #4e5050 url("/assets/img/patterns/noise.png") repeat scroll 50% 50%;
+	-webkit-border-top-left-radius: 0.5em;
+	-webkit-border-top-right-radius: 0.5em;
+	-moz-border-radius-topleft: 0.5em;
+	-moz-border-radius-topright: 0.5em;
+	border-top-left-radius: 0.5em;
+	border-top-right-radius: 0.5em;
+
+	@include respond(60em) {
+		width: 100%;
+	}
+
+	.company {
+		@include box-sizing(border-box);
+		width: 11.5em;
+		padding-top: 1.75em;
+		float: left;
+
+		@include respond(600px) {
+			float: none;
+			width: auto;
+			padding-top: 1.25em;
+		}
+
+		img {
+			width: 6.25em;
+			display: block;
+			margin: 0 auto 2.5em;
+
+			@include respond(600px) {
+				margin-bottom: 1em;
+			}
+		}
+
+		p {
+			font-size: 0.75em;
+			line-height: 1.333;
+			color: #959494;
+			text-align: center;
+
+			span {
+				display: block;
+
+				@include respond(600px) {
+					display: inline;
+
+					&:before {
+						content: "·";
+						margin-left: 1em;
+						margin-right: 1.25em;
+					}
+				}
+			}
+		}
+	}
+
+	.links {
+		@include box-sizing(border-box);
+		@include clearfix;
+		background: -moz-linear-gradient(top,  rgba(17,17,17,0.55) 0%, rgba(17,17,17,0) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(17,17,17,0.55)), color-stop(100%,rgba(17,17,17,0)));
+		background: -webkit-linear-gradient(top,  rgba(17,17,17,0.55) 0%,rgba(17,17,17,0) 100%);
+		background: -o-linear-gradient(top,  rgba(17,17,17,0.55) 0%,rgba(17,17,17,0) 100%);
+		background: -ms-linear-gradient(top,  rgba(17,17,17,0.55) 0%,rgba(17,17,17,0) 100%);
+		background: linear-gradient(to bottom,  rgba(17,17,17,0.55) 0%,rgba(17,17,17,0) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c111111', endColorstr='#00111111',GradientType=0 );
+		-webkit-border-top-right-radius: 0.5em;
+		-moz-border-radius-topright: 0.5em;
+		border-top-right-radius: 0.5em;
+		margin-left: 11.5em;
+		color: #fff;
+
+		@include respond(676px) {
+			padding-bottom: 1.25em;
+		}
+
+		@include respond(600px) {
+			margin-left: 0;
+		}
+
+		section {
+			@include box-sizing(border-box);
+			float: left;
+			padding: 1.5em 0 1.25em 2.5em;
+
+			@include respond(830px) {
+				float: none;
+				width: auto !important;
+				padding-top: 1.25em;
+				padding-left: 2em;
+			}
+
+			@include respond(600px) {
+				padding-bottom: 0;
+				width: 96% !important;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			@include respond(460px) {
+				padding-left: 1em;
+			}
+
+			&.areas {
+				width: 22%;
+			}
+			&.about {
+				width: 23%;
+			}
+			&.clients {
+				width: 22%;
+			}
+			&.contact {
+				width: 26%;
+			}
+		}
+
+		h4 {
+			font-size: 1.125em;
+			font-weight: bold;
+			margin: 0 0 0.6em;
+
+			@include respond(830px) {
+				float: left;
+				width: 3.8em;
+				margin-right: 1em;
+				text-align: right;
+				font-size: 0.9em;
+			}
+
+			@include respond(676px) {
+				float: none;
+				text-align: left;
+				margin-bottom: 0.25em;
+			}
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			font-size: 0.9375em;
+
+			@include respond(830px) {
+				font-size: 0.8em;
+				margin-top: 0.1em;
+			}
+
+			@include respond(600px) {
+				padding-bottom: 0em;
+				@include clearfix;
+			}
+
+			li {
+				white-space: nowrap;
+
+				@include respond(830px) {
+					float: left;
+					margin-right: 1.25em;
+				}
+			}
+
+			a {
+				color: #fff;
+			}
+
+			small {
+				color: #999;
+				width: 1.1em;
+				font-size: 1em;
+				vertical-align: -0.1em;
+				display: inline-block;
+
+				@include respond(830px) {
+					display: inline;
+					width: auto;
+				}
+			}
+		}
+	}
+}

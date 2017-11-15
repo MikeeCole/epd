@@ -1,0 +1,21 @@
+$eclipseBlue: #1a9bd3;
+
+$eclipseBlueHover: #39b1e5;
+
+$default-transition-duration: 0.15s;
+$default-transition-function: ease;
+
+$default-box-shadow-color: rgba(0, 0, 0, 0.2);
+$default-box-shadow-v-offset: 0.125em;
+$default-box-shadow-blur: 0.375em;
+
+$default-border-radius: 0.35em;
+
+$mainwidth: 960px;
+
+$testing: rgba(255,255,255,0.5); /* change last digit to 0 when final */
+
+$article-layout-grid: (
+    columns: 1,
+    gutter: 0px,
+);

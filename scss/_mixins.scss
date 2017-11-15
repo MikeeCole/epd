@@ -1,0 +1,41 @@
+@mixin hidpi($file, $x, $y) {
+	@media only screen and (min-device-pixel-ratio: 1.3),
+	       only screen and (-webkit-min-device-pixel-ratio: 1.3),
+	       only screen and (-o-min-device-pixel-ratio: 13/10),
+	       only screen and (min-resolution: 120dpi) {
+
+		background-image: url($file);
+		background-size: $x $y;
+	}
+}
+
+@mixin respond($size) {
+	@media screen and (max-width: $size) {
+		@content;
+	}
+}
+
+@mixin is-responsive() {
+	@media screen and (min-width: 100px) {
+		@content;
+	}
+}
+
+@mixin respondMin($size) {
+	@media screen and (min-width: $size) {
+		@content;
+	}
+}
+
+@mixin panel() {
+	@include box-shadow;
+	@include border-radius;
+	@include box-sizing(border-box);
+	background-color: #fff;
+}
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}

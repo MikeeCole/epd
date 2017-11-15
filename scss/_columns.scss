@@ -1,0 +1,64 @@
+.columns {
+	@include pie-clearfix;
+	margin: 0 0 1em; 
+
+	.side {
+		float: right;
+		width: 31%;
+
+		@include respond(720px) {
+			float: none;
+			width: 100% !important;
+		}
+	}
+
+	.main {
+		float: left;
+		width: 62%;
+
+		@include respond(720px) {
+			float: none;
+			width: 100% !important;
+		}
+	}
+
+	.column {
+		float: left;
+		width: 48%;
+
+		&.last {
+			float: right;
+		}
+	}
+}
+
+// home column sizing
+body.home {
+	.side {
+		float: left;
+		clear: left;
+	}
+	.main {
+		float: right;
+		width: 65%;
+	}
+}
+
+body.area {
+	.side {
+		float: left;
+	}
+	.main {
+		float: right;
+	}
+}
+
+body.story,
+body.stories {
+	.side {
+		float: left;
+	}
+	.main {
+		float: right;
+	}
+}
