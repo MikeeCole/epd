@@ -15,13 +15,16 @@
     );
       
     $childList = get_pages($childArgs);
-        foreach ($childList as $child) { ?>
+        foreach ($childList as $child) { 
+            
+        /* grab the url for the full size featured image */
+        $featured_img_url = get_the_post_thumbnail_url($child,'full'); 
+        ?>
+  
         <section class="how">
             <a href="<?php echo get_permalink($child); ?>">
-                <?php 
-                    echo $child->post_title; 
-                    echo get_the_post_thumbnail( $child);
-                    ?>
+                <img src="<?php echo esc_url($featured_img_url); ?>">
+                <h3><?php echo $child->post_title; ?></h3>
             </a>
         </section> 
     <?php } ?>
