@@ -1,35 +1,33 @@
 <!-- start of footer.php -->
 
-<div class="clear"></div>
-
-
-<div class="helping-people">
-<h2>How We Help People</h2>
-<div class="areas">
-<div class="area"><a href="/areas/medical">
-<img class="large" src="https://eclipsepd.com/assets/img/areas/display/medical-homepage.jpg" alt="Medical" />
-<img class="small" src="https://eclipsepd.com/assets/img/areas/display/Medical_02.jpg" alt="Medical" />
-Medical
-</a></div>
-<div class="area"><a href="/areas/life-sciences">
-<img class="large" src="https://eclipsepd.com/assets/img/areas/display/life-sciences-homepage.jpg" alt="Life Sciences" />
-<img class="small" src="https://eclipsepd.com/assets/img/areas/display/life-sciences.jpg" alt="Life Sciences" />
-Life Sciences
-</a></div>
-<div class="area"><a href="/areas/industrial">
-<img class="large" src="https://eclipsepd.com/assets/img/areas/display/industrial-homepage.jpg" alt="Industrial" />
-<img class="small" src="https://eclipsepd.com/assets/img/areas/display/industrial.jpg" alt="Industrial" />
-Industrial
-</a></div>
-<div class="area"><a href="/areas/consumer">
-<img class="large" src="https://eclipsepd.com/assets/img/areas/display/Main-image-4-960x540.png" alt="Consumer Health" />
-<img class="small" src="https://eclipsepd.com/assets/img/areas/display/Main-image-4-960x540.png" alt="Consumer Health" />
-Consumer Health
-</a></div>
-</div>
-
-<hr />
-</div>
+<!-- how we help start -->
+<section class="columns4" id="help">
+    <header>
+        <h2>How We Help People</h2>
+    </header>
+    
+    <section class="columns-how">
+<?php
+    $childArgs = array(
+        'sort_order' => 'ASC',
+        'sort_column' => 'menu_order',
+        'child_of' => 137
+    );
+      
+    $childList = get_pages($childArgs);
+        foreach ($childList as $child) { ?>
+        <section class="how">
+            <a href="<?php echo get_permalink($child); ?>">
+                <?php 
+                    echo $child->post_title; 
+                    echo get_the_post_thumbnail( $child);
+                    ?>
+            </a>
+        </section> 
+    <?php } ?>
+    </section>
+</section>
+<!-- how we hellp end -->
 
 <footer id="footer">
     <section class="company">

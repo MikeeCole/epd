@@ -48,51 +48,46 @@ wp_reset_postdata(); ?>
     //$fpContent = wpautop(get_extended($content(0), yes));
     $pagecopy = get_extended( $post->post_content );?>
 <!-- article start -->
-<section class="columns">
-    <section class="side-col">
+<section class="columns3">
+    <section class="side-3col">
         <h1><?php echo $fpTitle; ?></h1>
     </section>
+    
 
-    <section class="main-col">
+
+    <section class="main-3col">
         <?=wpautop( $pagecopy['main'] ); ?>
     </section>
     
 
 </section>
 <!-- article end -->
-
-<div style="clear: both"><hr /></div>
-
+<hr />
 <!-- contact us start --> 
 
-<section class="columns">
+<section class="columns3">
     <header class="contact">
         <h3 class="bordered">Chat With Us</h3>
         If you would like to know more please <a href="/download/brochure">download our brochure</a>.
     </header>
-    
-        
-        <section class="third-col">
+        <section class="col">
             <li class="phone"><span class="icons">☎</span> 978.478.5150</li>
             <li class="email"><span class="icons">✉</span> <a href="mailto:hello@eclipsepd.com">hello@eclipsepd.com</a></li>
-        </section>
-        
-        <section class="third-col">
             <li class="phone"><span class="icons">📠</span> 978.478.5160</li>
- 	        <li class="address"><span class="icons">📌</span>
-                <a href="http://maps.google.com/maps?q=14+Powwow+River+Rd+No.5,+East+Kingston,+NH+03827">14 Powwow River Rd No.5<br />
-East Kingston NH 03827</a></li>
-        </section>
-        
-        <section class="third-col">
  	        <li class="twitter"><span class="icons">🐦</span> <a href="http://twitter.com/eclipsepdc">@eclipsepdc</a></li>
             <li class="linkedin"><span class="icons">█</span> <a href="http://www.linkedin.com/company/115118">We’re on LinkedIn</a></li>
         </section>
-        
-    </section>
+        <section class="col">
+            Eclipse Product Development,<br />
+            14 Powwow River Rd, <br />
+            Unit 7, <br />
+            East Kingston, NH 03827
+        </section>    
+        <section class="col map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11689.003987483351!2d-71.02735373166152!3d42.90974717915377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2fb26dd5be00f%3A0xd0a8f2c5e8a48889!2sEclipse+Product+Development+Corporation!5e0!3m2!1sen!2sus!4v1510845774410" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></li>
+        </section>
 </section>
-
-<div style="clear: both"><hr /></div>
+<hr />
 
 <!-- end of front page.php apart from get_footer(); -->
 
