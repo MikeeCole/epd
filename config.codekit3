@@ -74,6 +74,13 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/page.php",
+		"oF": 0
+		},
 	"\/scss\/_base.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -109,6 +116,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/scss\/_components.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/_content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/_content.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -217,19 +237,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/scss\/content.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/scss\/content.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"\/scss\/ie.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -279,8 +286,15 @@
 		"oA": 0,
 		"oAP": "\/style.css",
 		"oF": 2,
-		"oS": 0,
+		"oS": 2,
 		"uL": 1
+		},
+	"\/single.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/single.php",
+		"oF": 0
 		},
 	"\/style.css": {
 		"aP": 1,
