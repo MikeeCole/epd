@@ -8,7 +8,7 @@ Template Name: Homepage
 
 <!-- hero start -->
 <header  class="hero">
-    <?php echo layerslider(9); ?>
+    <?php echo layerslider('frontpage'); ?>
 </header>
 <!-- hero end -->
 
