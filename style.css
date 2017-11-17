@@ -4,13 +4,14 @@ Theme Name: EPD
 
 Author: Mikee
 
-Description: Eclipse Style with Bourbon & Neat
+Description: Eclipse Style with Bourbon & CSS Grid
 
-Version: 4.0.4
+Version: 0.4
 License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl.html
-Tags: neat, bourbon
-Text Domain: Eclipse 
+Tags: neat, CSS Grid
+Text Domain: Eclipse
+GitHub Theme URI: MikeeCole/epd
 */
 /* change last digit to 0 when final */
 html { /*font: normal normal normal 100%/1.5 "Helvetica Neue", Arial, sans-serif;*/ font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif; color: #4d4f4f; margin: 0; padding: 0 0 110px; background-color: #232323; -webkit-font-smoothing: antialiased; }
