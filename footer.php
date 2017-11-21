@@ -15,7 +15,9 @@
     );
       
     $childList = get_pages($childArgs);
-        foreach ($childList as $child) { 
+        foreach ($childList as $child) {
+            
+            $areaText = $areaText . '<li><a href="' . get_permalink($child) . '">' . $child->post_title . '</a></li>\n';
             
         /* grab the url for the full size featured image */
         $featured_img_url = get_the_post_thumbnail_url($child,'full'); 
@@ -46,11 +48,7 @@
 					<h4>Areas</h4>
 
 					<ul>
-													<li><a href="/areas/medical">Medical</a></li>
-													<li><a href="/areas/life-sciences">Life Sciences</a></li>
-													<li><a href="/areas/industrial">Industrial</a></li>
-													<li><a href="/areas/consumer">Consumer Health</a></li>
-						
+<?php echo $areaText; ?>
 					</ul>
 				</section>
 				<section class="about">
