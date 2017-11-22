@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/areas.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/areas.php",
+		"oF": 0
+		},
 	"\/footer.php": {
 		"cB": 0,
 		"ft": 8192,

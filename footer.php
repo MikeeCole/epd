@@ -13,7 +13,7 @@
         'sort_column' => 'menu_order',
         'child_of' => 137,
         'parent' => 137,
-        'sort_order' => 'asc'
+        'sort_order' => 'desc'
     );
       
     $childList = get_pages($childArgs);
@@ -51,8 +51,9 @@
 					<h4>Areas</h4>
 
 					<ul>
-<?php echo $areaText; ?>
+                        <?php echo $areaText; ?>
 					</ul>
+					
 				</section>
 				<section class="about">
 					<h4>About</h4>
