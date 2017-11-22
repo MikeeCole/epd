@@ -11,7 +11,9 @@
     $childArgs = array(
         'sort_order' => 'ASC',
         'sort_column' => 'menu_order',
-        'child_of' => 137
+        'child_of' => 137,
+        'parent' => 137,
+        'sort_order' => 'asc'
     );
       
     $childList = get_pages($childArgs);
