@@ -81,7 +81,13 @@ a {
             }
             
             li {
-                font-size: 0.9em;            }
+                font-size: 0.9em;
+                transition: background .15s ease-in-out;    
+            }
+            
+            li:hover {
+                background: #eee;
+            }
         }
     }
     

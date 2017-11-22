@@ -6,13 +6,8 @@
     $title = get_the_title();    
     $pagecopy = get_extended( $post->post_content );
     $sliderName = $title . 'Top';
-    $mykey_values = get_post_custom_values( 'expert' );
-
 ?>
 
-<h3><?php  ?></h3>
-
-<?php  ?>    
 <section>
     <?php layerslider($sliderName); ?>
 </section>
@@ -35,9 +30,45 @@
     
     <section class="main-3col">
        <?=wpautop( $pagecopy['main'] ); ?> 
-                   
-       
     </section>
+    
+</section>
+<?php
+
+$args = array(
+    'post_type'      => 'page',
+    'posts_per_page' => -1,
+    'post_parent'    => $post->ID,
+    'order'          => 'ASC',
+    'orderby'        => 'menu_order'
+ );
+
+$parent = new WP_Query( $args );
+
+if ( $parent->have_posts() ) :
+    while ( $parent->have_posts() ) : $parent->the_post(); 
+    $pagecopy = get_extended( $post->post_content );
+    $featured_img_url = get_the_post_thumbnail_url($child,'full');
+?>
+        <div id="parent-<?php the_ID(); ?>" class="parent-page">
+        <h4>
+            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                <?php the_title(); ?>
+            </a>
+        </h4>
+        </div>
+            <img src="<?php echo $featured_img_url; ?>">
+            
+
+
+        <section>
+            <?php the_excerpt(); ?>
+        </section>
+
+    <?php endwhile; ?>
+
+<?php endif; wp_reset_postdata(); ?>
+<section>
     
 </section>
 

@@ -40,7 +40,9 @@ a { text-decoration: none; }
 
 .page .columns3 .expert ul { padding-left: 0px; }
 
-.page .columns3 .expert li { font-size: 0.9em; }
+.page .columns3 .expert li { font-size: 0.9em; transition: background .15s ease-in-out; }
+
+.page .columns3 .expert li:hover { background: #eee; }
 
 .page .columns4 { display: grid; grid-gap: 0px; }
 
