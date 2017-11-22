@@ -19,7 +19,8 @@
     $childList = get_pages($childArgs);
         foreach ($childList as $child) {
             
-            $areaText = $areaText . '<li><a href="' . get_permalink($child) . '">' . $child->post_title . '</a></li>\n';
+            $areaText = $areaText . '<li><a href="' . get_permalink($child) . '">' . $child->post_title . '</a></li>';
+            $areaText = $areaText . PHP_EOL;
             
         /* grab the url for the full size featured image */
         $featured_img_url = get_the_post_thumbnail_url($child,'full'); 
