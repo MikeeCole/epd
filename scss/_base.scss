@@ -63,14 +63,25 @@ a {
             grid-column: 3;
         }
         
+        .col-top {
+            align-items: flex-start;
+        }
+        
         .expert {
             background-color: white;
             padding: 10px;
             border-radius: 10px;
-            align-self: baseline;            
+            align-self: end;
+            align-items: flex-end;
+            box-shadow: 0px 0.125em 0.375em rgba(0, 0, 0, 0.2);
+            margin-right: 10px;
+                        
             ul {
                 padding-left: 0px;
             }
+            
+            li {
+                font-size: 0.9em;            }
         }
     }
     
@@ -95,19 +106,19 @@ a {
             text-align: center;
             
             .how {
+                padding-top: 20px;
+                border-radius: 30px;
+                
                 img {
                     width: 80%;
                     max-width: 150px;
                     border-radius: 10px;
                 }
-                img:hover {
-                    filter: grayscale(90%);
-                }
             }
             
             .how:hover {
                 background-color: rgba(216, 215, 215, 0.44);
-                padding-top: 10px;
+                filter: grayscale(90%);
             }
             
             header {

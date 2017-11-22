@@ -18,18 +18,24 @@
 </section>
 
 <section class="columns3">
-    <section class="side-3col">
-        <h2><?php echo $title; ?></h2>
+    <section class="side-3col" style="display: inline-grid;">
+        <section class="col_top">
+            <header>
+                <h2><?php echo $title; ?></h2>
+            </header>
+        </section>
+        
+        <section class="expert">
+            <header>Areas of Expertise:</header>
+            <ul>
+			    <?php the_field('expertise'); ?>
+            </ul>
+        </section>
     </section>
     
     <section class="main-3col">
        <?=wpautop( $pagecopy['main'] ); ?> 
-                   <section class="expert">
-                <header>Areas of Expertise:</header>
-        <ul>
-			<?php the_field('expertise'); ?>
-        </ul>
-        </section>
+                   
        
     </section>
     
