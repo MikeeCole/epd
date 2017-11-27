@@ -62,7 +62,7 @@ wp_reset_postdata(); ?>
 
 </section>
 <!-- article end -->
-<hr />
+
 <!-- contact us start --> 
 
 <section class="columns3">
@@ -87,7 +87,7 @@ wp_reset_postdata(); ?>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11689.003987483351!2d-71.02735373166152!3d42.90974717915377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e2fb26dd5be00f%3A0xd0a8f2c5e8a48889!2sEclipse+Product+Development+Corporation!5e0!3m2!1sen!2sus!4v1510845774410" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe></li>
         </section>
 </section>
-<hr />
+
 
 <!-- end of front page.php apart from get_footer(); -->
 

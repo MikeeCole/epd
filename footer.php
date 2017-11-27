@@ -1,5 +1,18 @@
 <!-- start of footer.php -->
 
+<!-- contact start -->
+
+<section id="contactForm" class="contactForm">
+    <form>
+        Would you like to know more?
+        <input type="email">
+        <button type="submit">Let us contact you</button>
+    </form>
+    
+</section>
+
+<!-- contact end -->
+
 <!-- how we help start -->
 <section class="columns4" id="help">
     <header>
@@ -35,7 +48,9 @@
     <?php } ?>
     </section>
 </section>
-<!-- how we hellp end -->
+<!-- how we help end -->
+
+
 
 <footer id="footer">
     <section class="company">

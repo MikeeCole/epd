@@ -70,6 +70,12 @@ a { text-decoration: none; }
 
 #help.header { margin: 0px; }
 
+.contactForm { align-content: center; padding: 20px 0px; }
+
+.contactForm button { background: #3498db; background-image: linear-gradient(to bottom, #3498db, #2980b9); border-radius: 28px; font-family: Arial; color: #ffffff; font-size: 20px; padding: 10px 20px 10px 20px; text-decoration: none; }
+
+.contactForm button:hover { background: #3cb0fd; background-image: linear-gradient(to bottom, #3cb0fd, #3498db); text-decoration: none; }
+
 header { position: relative; }
 
 @media screen and (max-width: 630px) { header { margin-top: 1.5em; } }
