@@ -81,3 +81,8 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 add_post_type_support( 'page', 'excerpt' );
+
+function mailChimp () {
+	echo '
+	<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"1d1f9e1611788bcf020f79924","lid":"2dba2ecf3d"}) })</script>';
+}
