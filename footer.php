@@ -44,9 +44,11 @@
     <header>
         <h3>Join our mailing list</h3>
     </header>
-    <form>
-        <input type="email" placeholder="Enter your email address." size="35">
-        <button type="submit">Let us contact you <svg class="icon icon-mail4"><use xlink:href="#icon-mail4"></use></svg><span class="mls"></span></button>
+    <form action="https://eclipsepd.us13.list-manage.com/subscribe/post?u=1d1f9e1611788bcf020f79924&amp;id=2dba2ecf3d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <input type="email" placeholder="Enter your email address." size="35" name="EMAIL" id="mce-EMAIL">
+		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1d1f9e1611788bcf020f79924_2dba2ecf3d" tabindex="-1" value=""></div>
+
+        <button type="submit"name="subscribe" id="mc-embedded-subscribe">Let us contact you <svg class="icon icon-mail4"><use xlink:href="#icon-mail4"></use></svg><span class="mls"></span></button>
     </form>
     
 </section>
