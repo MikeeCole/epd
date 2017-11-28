@@ -44,9 +44,9 @@
     <header>
         <h3>Join our mailing list</h3>
     </header>
-    <form action="/submit.php">
-        <input type="email" placeholder="Enter your email address &" size="35">
-        <button type="submit">let us contact you <svg class="icon icon-mail4"><use xlink:href="#icon-mail4"></use></svg><span class="mls"></span></button>
+    <form>
+        <input type="email" placeholder="Enter your email address." size="35">
+        <button type="submit">Let us contact you <svg class="icon icon-mail4"><use xlink:href="#icon-mail4"></use></svg><span class="mls"></span></button>
     </form>
     
 </section>
