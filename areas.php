@@ -56,7 +56,7 @@ if ( $parent->have_posts() ) :
     $pagecopy = get_extended( $post->post_content );
     $featured_img_url = get_the_post_thumbnail_url($child,'full');
 ?>
-    <section>
+    <section class="areathumb">
         <h4>
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                 <?php the_title(); ?>
