@@ -12,6 +12,8 @@
     <?php layerslider($sliderName); ?>
 </section>
 
+
+<!-- text area start -->
 <section class="columns3">
     <section class="side-3col" style="display: inline-grid;">
         <section class="col_top">
@@ -33,6 +35,10 @@
     </section>
     
 </section>
+<!-- text section end -->
+
+<!-- case studies start -->
+<section class="columns3">
 <?php
 
 $args = array(
@@ -50,27 +56,25 @@ if ( $parent->have_posts() ) :
     $pagecopy = get_extended( $post->post_content );
     $featured_img_url = get_the_post_thumbnail_url($child,'full');
 ?>
-        <div id="parent-<?php the_ID(); ?>" class="parent-page">
+    <section>
         <h4>
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                 <?php the_title(); ?>
             </a>
         </h4>
-        </div>
             <img src="<?php echo $featured_img_url; ?>">
-            
-
 
         <section>
             <?php the_excerpt(); ?>
         </section>
-
+    </section>
+    
     <?php endwhile; ?>
 
 <?php endif; wp_reset_postdata(); ?>
-<section>
     
 </section>
+<!-- case studies end -->
 
 <!-- end of areas.php -->
 <?php get_footer(); ?>
