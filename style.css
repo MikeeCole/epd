@@ -18,13 +18,15 @@ html { /*font: normal normal normal 100%/1.5 "Helvetica Neue", Arial, sans-serif
 
 body { margin: 0 0 110px; padding: 0; border-top: 10px solid #1a9bd3; background: #eee url("https://eclipsepd.com/assets/img/patterns/grid.png") repeat scroll 50% 50%; position: relative; }
 
-a { text-decoration: none; }
+a { text-decoration: none; color: #1a9bd3; }
+
+a:hover { color: #39b1e5; }
 
 .navbar-fixed { top: 0; z-index: 100; position: fixed; width: 100%; }
 
 .page { margin-left: auto; margin-right: auto; margin-top: 0px; max-width: 960px; background-color: rgba(255, 255, 255, 0.5); padding-left: 20px; padding-right: 20px; }
 
-.page .hero, .page .banner { margin-top: 0px; margin-bottom: 20px; padding-top: 20px; }
+.page .hero, .page .banner { margin-top: 0px; margin-bottom: 0px; padding-top: 20px; }
 
 .page .columns3 { display: grid; grid-gap: 0px; grid-template-columns: repeat(3, 1fr); grid-auto-rows: minmax(100px, auto); }
 
@@ -70,11 +72,21 @@ a { text-decoration: none; }
 
 #help.header { margin: 0px; }
 
-.contactForm { align-content: center; padding: 20px 0px; }
+#help.header h2 { margin: 0px; }
 
-.contactForm button { background: #3498db; background-image: linear-gradient(to bottom, #3498db, #2980b9); border-radius: 28px; font-family: Arial; color: #ffffff; font-size: 20px; padding: 10px 20px 10px 20px; text-decoration: none; }
+.contactForm { text-align: center; padding: 20px 0px 0px 0px; }
 
-.contactForm button:hover { background: #3cb0fd; background-image: linear-gradient(to bottom, #3cb0fd, #3498db); text-decoration: none; }
+.contactForm header { text-align: left; }
+
+.contactForm input, .contactForm button { font-size: 20px; padding: 8px; font-family: Arial; border: 2px solid #1a9bd3; }
+
+.contactForm input { border-bottom-left-radius: 20px; border-top-left-radius: 20px; }
+
+.contactForm button { background: #1a9bd3; border-top-right-radius: 20px; border-bottom-right-radius: 20px; color: #ffffff; margin-left: -5px; cursor: hand; }
+
+.contactForm button:hover { background: #39b1e5; }
+
+.contactForm .icon { display: inline-block; color: white; width: 1em; height: 1em; fill: currentColor; position: relative; margin-top: -3px; top: 3px; }
 
 header { position: relative; }
 

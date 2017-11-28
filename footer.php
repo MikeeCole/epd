@@ -1,22 +1,11 @@
 <!-- start of footer.php -->
 
-<!-- contact start -->
 
-<section id="contactForm" class="contactForm">
-    <form>
-        Would you like to know more?
-        <input type="email">
-        <button type="submit">Let us contact you</button>
-    </form>
-    
-</section>
-
-<!-- contact end -->
 
 <!-- how we help start -->
 <section class="columns4" id="help">
     <header>
-        <h2>How We Help People</h2>
+        <h3>How We Help People</h3>
     </header>
     
     <section class="columns-how">
@@ -50,7 +39,18 @@
 </section>
 <!-- how we help end -->
 
-
+<!-- contact start -->
+<section id="contactForm" class="contactForm">
+    <header>
+        <h3>Join our mailing list</h3>
+    </header>
+    <form>
+        <input type="email" placeholder="Enter your email address." size="35">
+        <button type="submit">Let us contact you <svg class="icon icon-mail4"><use xlink:href="#icon-mail4"></use></svg><span class="mls"></span></button>
+    </form>
+    
+</section>
+<!-- contact end -->
 
 <footer id="footer">
     <section class="company">
@@ -101,5 +101,7 @@
 </div>
 <?php wp_footer(); ?>
 </body>
+
+<?php mailChimp(); ?>
 </html>
 
