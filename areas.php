@@ -8,9 +8,9 @@
     $sliderName = $title . 'Top';
 ?>
 
-<section>
+<header class="hero">
     <?php layerslider($sliderName); ?>
-</section>
+</header>
 
 
 <!-- text area start -->
@@ -38,7 +38,8 @@
 <!-- text section end -->
 
 <!-- case studies start -->
-<section class="columns3">
+<h3><?php echo $title; ?> product Case Studies that might interest you:</h3>
+<section class="columns2">
 <?php
 
 $args = array(
@@ -52,16 +53,25 @@ $args = array(
 $parent = new WP_Query( $args );
 
 if ( $parent->have_posts() ) :
+    $oddeven = 0; 
     while ( $parent->have_posts() ) : $parent->the_post(); 
-    $pagecopy = get_extended( $post->post_content );
-    $featured_img_url = get_the_post_thumbnail_url($child,'full');
+        $pagecopy = get_extended( $post->post_content );
+        $featured_img_url = get_the_post_thumbnail_url($child,'full');
+
+        $oddeven++;
+    
+        if ($oddeven % 2 == 0){
+            $alignment = ' even';
+        } else {
+            $alignment = ' odd';
+        }
 ?>
-    <section class="areathumb">
-        <h4>
+    <section class="areathumb<?php echo $alignment; ?>">
+        <h3>
             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                 <?php the_title(); ?>
             </a>
-        </h4>
+        </h3>
             <img src="<?php echo $featured_img_url; ?>">
 
         <section>
