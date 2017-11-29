@@ -19,3 +19,5 @@ $article-layout-grid: (
     columns: 1,
     gutter: 0px,
 );
+
+$eclipseGradient: background: linear-gradient(to right, #ffffff 0%,#1a9bd3 50%,#1a9bd3 50%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
