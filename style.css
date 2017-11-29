@@ -88,6 +88,18 @@ a:hover { color: #39b1e5; }
 
 .contactForm .icon { display: inline-block; color: white; width: 1em; height: 1em; fill: currentColor; position: relative; margin-top: -3px; top: 3px; }
 
+.columns2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); grid-gap: 0px; }
+
+.columns2 .areathumb { margin-top: 0px; background: white; border-radius: 10px; border: 10px; width: 450px; padding: 10px; box-shadow: 0px 0.125em 0.375em rgba(0, 0, 0, 0.2); }
+
+@media screen and (max-width: 960px) { .columns2 .areathumb { justify-self: center; justify-content: space-around; margin-top: 20px; } }
+
+.columns2 .areathumb img { max-width: 420px; padding: 10px; }
+
+@media screen and (min-width: 960px) { .columns2 .odd { margin-right: 10px; } }
+
+@media screen and (min-width: 960px) { .columns2 .even { margin-left: 10px; } }
+
 header { position: relative; }
 
 @media screen and (max-width: 630px) { header { margin-top: 1.5em; } }
