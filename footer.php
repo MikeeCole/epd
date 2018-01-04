@@ -60,8 +60,11 @@
 				<a href="/"><img src="https://eclipsepd.com/assets/img/logos/eclipse-letterpressed.png" alt="Eclipse" /></a>
 
 				<p>
-					Copyright © 2017
+					Copyright &copy; <?php echo date("Y"); ?>
 					<span>All Rights Reserved.</span>
+				</p>
+				<p>
+    				<a href="/credits">Credits</a>
 				</p>
 			</section>
 			<section class="links">

@@ -71,12 +71,43 @@ wp_reset_postdata(); ?>
         If you would like to know more please <a href="/download/brochure">download our brochure</a>.
     </header>
         <section class="col">
-            <li class="phone"><span class="icons">☎</span> 978.478.5150</li>
-            <li class="email"><span class="icons">✉</span> <a href="mailto:hello@eclipsepd.com">hello@eclipsepd.com</a></li>
-            <li class="phone"><span class="icons">📠</span> 978.478.5160</li>
- 	        <li class="twitter"><span class="icons">🐦</span> <a href="http://twitter.com/eclipsepdc">@eclipsepdc</a></li>
-            <li class="linkedin"><span class="icons">█</span> <a href="http://www.linkedin.com/company/115118">We’re on LinkedIn</a></li>
+            <li class="phone">
+                <span class="icons">
+                    <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/smartphone-icon.svg">
+                    </object>
+                </span> 
+                978.478.5150
+            </li>
+            <li class="email">
+                <span class="icons">                    
+                    <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/email-icon.svg">
+                    </object>
+                </span>
+                <a href="mailto:hello@eclipsepd.com">hello@eclipsepd.com</a>
+            </li>
+            <li class="phone">
+                <span class="icons">
+                    <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/fax-icon.svg">
+                    </object>
+                </span> 
+                978.478.5160
+            </li>
+ 	        <li class="twitter">
+ 	            <span class="icons">
+ 	               <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter-icon.svg">
+ 	               </object>
+                </span>
+                    <a href="http://twitter.com/eclipsepdc">@eclipsepdc</a>
+            </li>
+            <li class="linkedin">
+                <span class="icons">
+                    <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/linkedin-icon.svg">
+                    </object>
+                </span>
+                <a href="http://www.linkedin.com/company/115118">We’re on LinkedIn</a>
+            </li>
         </section>
+        
         <section class="col">
             Eclipse Product Development,<br />
             14 Powwow River Rd, <br />

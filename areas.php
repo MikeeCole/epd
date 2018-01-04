@@ -75,7 +75,7 @@ if ( $parent->have_posts() ) :
             <img src="<?php echo $featured_img_url; ?>">
 
         <section>
-            <?php the_excerpt(); ?>
+            <?php the_excerpt(50); ?>
         </section>
     </section>
     

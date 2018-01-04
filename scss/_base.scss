@@ -28,7 +28,7 @@ a:hover {
 .navbar-fixed {
     top: 0;
     z-index: 100;
-  position: fixed;
+    position: fixed;
     width: 100%;
 }
 
@@ -55,6 +55,7 @@ a:hover {
         grid-gap: 0px;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-rows: minmax(100px, auto);
+        margin-top: 20px;
         //max-width: 960px;
         
         header {
@@ -143,6 +144,10 @@ a:hover {
     
     .main-3col{
         grid-column: 2 / span 2;
+        
+        p {
+        margin-top: 0px;    
+        }
     }    
     
     .side-3col{
@@ -152,12 +157,14 @@ a:hover {
             letter-spacing: 0.14em;
             text-transform: uppercase;
             font-size: 0.875rem;
+            margin-top: 0px;
         }    
         .story {
             background-color: red;
             position: relative;
             bottom: 0;
             left: 0;   
+
             }    
     }
     
@@ -182,6 +189,7 @@ a:hover {
 .contactForm {
     text-align: center;
     padding: 20px 0px 0px 0px;
+    margin-bottom: 15px;
     
     header {
         text-align: left;
