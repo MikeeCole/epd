@@ -95,7 +95,11 @@
 					<h4>Contact</h4>
 
 					<ul>
-						<li><small class="icons">&#x260e;</small> 888.478.5150</li>
+						<li>
+						    <small class="icons">
+                                <object type="image/svg+xml" class="icowhite" data="<?php echo get_stylesheet_directory_uri(); ?>/images/smartphone-icon.svg">
+                                </object>
+                            </small> 888.478.5150</li>
 						<li><small class="icons">&#x1f4e0;</small> 978.478.5160</li>
 						<li><small class="icons">&#x2709;</small> <a href="mailto:hello@eclipsepd.com">hello@eclipsepd.com</a></li>
 						<li><small class="icons">&#x1f426;</small> <a href="http://twitter.com/eclipsepdc">@eclipsepdc</a></li>

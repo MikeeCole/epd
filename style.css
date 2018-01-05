@@ -28,7 +28,7 @@ a:hover { color: #39b1e5; }
 
 .page .hero, .page .banner { margin-top: 0px; margin-bottom: 0px; padding-top: 20px; }
 
-.page .columns3 { display: grid; grid-gap: 0px; grid-template-columns: repeat(3, 1fr); grid-auto-rows: minmax(100px, auto); }
+.page .columns3 { display: grid; grid-gap: 0px; grid-template-columns: repeat(3, 1fr); grid-auto-rows: minmax(100px, auto); margin-top: 20px; }
 
 .page .columns3 header { grid-column: span 2; margin: 0px; }
 
@@ -62,9 +62,11 @@ a:hover { color: #39b1e5; }
 
 .page .main-3col { grid-column: 2 / span 2; }
 
+.page .main-3col p { margin-top: 0px; }
+
 .page .side-3col { grid-column: 1; }
 
-.page .side-3col h1 { font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.875rem; }
+.page .side-3col h1 { font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-size: 0.875rem; margin-top: 0px; }
 
 .page .side-3col .story { background-color: red; position: relative; bottom: 0; left: 0; }
 
@@ -74,7 +76,7 @@ a:hover { color: #39b1e5; }
 
 #help.header h2 { margin: 0px; }
 
-.contactForm { text-align: center; padding: 20px 0px 0px 0px; }
+.contactForm { text-align: center; padding: 20px 0px 0px 0px; margin-bottom: 15px; }
 
 .contactForm header { text-align: left; }
 
@@ -219,6 +221,10 @@ footer .links ul a { color: #fff; }
 footer .links ul small { color: #999; width: 1.1em; font-size: 1em; vertical-align: -0.1em; display: inline-block; }
 
 @media screen and (max-width: 830px) { footer .links ul small { display: inline; width: auto; } }
+
+.icon { width: 1em; height: 1em; align-content: center; vertical-align: middle; padding-right: 0.5em; }
+
+.icowhite { fill: white; }
 
 /*
 

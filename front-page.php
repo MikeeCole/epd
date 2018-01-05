@@ -76,7 +76,7 @@ wp_reset_postdata(); ?>
                     <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/smartphone-icon.svg">
                     </object>
                 </span> 
-                978.478.5150
+                <a href="tel:1-978-478-5150">978-478-5150</a>
             </li>
             <li class="email">
                 <span class="icons">                    
@@ -90,7 +90,7 @@ wp_reset_postdata(); ?>
                     <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/fax-icon.svg">
                     </object>
                 </span> 
-                978.478.5160
+                <a href="tel:1-978-478-5160">978-478-5160</a>
             </li>
  	        <li class="twitter">
  	            <span class="icons">
