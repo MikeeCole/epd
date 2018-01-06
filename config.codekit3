@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/404.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/404.php",
+		"oF": 0
+		},
 	"\/areas.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -420,6 +427,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/svg.html",
+		"oF": 0
+		},
+	"\/svg.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/svg.php",
 		"oF": 0
 		}
 	},

@@ -20,19 +20,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.9.0/jarallax.min.js"></script>
 -->
 
+<!-- import SVG start -->
+<?php 
+include "svg.php";
+    ?>
+    
+<!-- import SVG end -->
+
 </head>
 
 <body class="home">
 
-<!-- import SVG start -->
-<?php 
-    $themepath = get_template_directory();
-    $svgfile = $themepath . '/svg.html';
-    $svg = file_get_contents($svgfile);
-    echo $svg;
-    ?>
-    
-<!-- import SVG end -->
+
 
 	<div class="page">
 		<div class="stage">

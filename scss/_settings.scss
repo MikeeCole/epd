@@ -13,7 +13,7 @@ $default-border-radius: 0.35em;
 
 $mainwidth: 960px;
 
-$testing: rgba(255,255,255,0.5); /* change last digit to 0 when final */
+$testing: linear-gradient(to right, rgba(255,255,255,0.7) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0.7) 100%);
 
 $article-layout-grid: (
     columns: 1,

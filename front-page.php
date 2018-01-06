@@ -73,36 +73,31 @@ wp_reset_postdata(); ?>
         <section class="col">
             <li class="phone">
                 <span class="icons">
-                    <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/smartphone-icon.svg">
-                    </object>
+                    <?php svg("smartphone", "black"); ?>
                 </span> 
                 <a href="tel:1-978-478-5150">978-478-5150</a>
             </li>
             <li class="email">
                 <span class="icons">                    
-                    <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/email-icon.svg">
-                    </object>
+                    <?php svg("email", "black"); ?>
                 </span>
                 <a href="mailto:hello@eclipsepd.com">hello@eclipsepd.com</a>
             </li>
             <li class="phone">
                 <span class="icons">
-                    <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/fax-icon.svg">
-                    </object>
+                    <?php svg("fax", "black"); ?>
                 </span> 
                 <a href="tel:1-978-478-5160">978-478-5160</a>
             </li>
  	        <li class="twitter">
  	            <span class="icons">
- 	               <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/twitter-icon.svg">
- 	               </object>
+                    <?php svg("twitter", "black"); ?>
                 </span>
                     <a href="http://twitter.com/eclipsepdc">@eclipsepdc</a>
             </li>
             <li class="linkedin">
                 <span class="icons">
-                    <object type="image/svg+xml" class="icon" data="<?php echo get_stylesheet_directory_uri(); ?>/images/linkedin-icon.svg">
-                    </object>
+                    <?php svg("linkedin", "black"); ?>
                 </span>
                 <a href="http://www.linkedin.com/company/115118">We’re on LinkedIn</a>
             </li>

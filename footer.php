@@ -42,9 +42,8 @@
 <!-- contact start -->
 <section id="contactForm" class="contactForm">
     <header>
-        <h3>Join our mailing list</h3>
+        <h3>Join our mailing list for updates</h3>
     </header>
-    We'll email you interesting updates - not too often, we promise.
     <form action="https://eclipsepd.us13.list-manage.com/subscribe/post?u=1d1f9e1611788bcf020f79924&amp;id=2dba2ecf3d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <input type="email" placeholder="Enter your email address." size="35" name="EMAIL" id="mce-EMAIL">
 		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1d1f9e1611788bcf020f79924_2dba2ecf3d" tabindex="-1" value=""></div>
@@ -89,7 +88,7 @@
 					<h4>Clients</h4>
 
 					<ul>
-						<li><a href="https://secure.eclipsepd.com/">Log In</a></li>
+						<li><a href="https://secure.eclipsepd.com/">File Vault</a></li>
 					</ul>
 				</section>
 				<section class="contact">
@@ -98,12 +97,29 @@
 					<ul>
 						<li>
 						    <small class="icons">
-                                <object type="image/svg+xml" class="icowhite" data="<?php echo get_stylesheet_directory_uri(); ?>/images/smartphone-icon.svg">
-                                </object>
-                            </small> 888.478.5150</li>
-						<li><small class="icons">&#x1f4e0;</small> 978.478.5160</li>
-						<li><small class="icons">&#x2709;</small> <a href="mailto:hello@eclipsepd.com">hello@eclipsepd.com</a></li>
-						<li><small class="icons">&#x1f426;</small> <a href="http://twitter.com/eclipsepdc">@eclipsepdc</a></li>
+                                <?php svg("smartphone", "white"); ?>
+                            </small>
+                            <a href="tel:978-478-5150">978-478-5150</a>
+                        </li>
+						<li>
+						    <small class="icons">
+                                <?php svg("fax", "white"); ?>
+                            </small> 
+                            <a href="tel:978-478-5160">978-478-5160</a>
+                        </li>
+						<li>
+						    <small class="icons">
+                                <?php svg("email", "white"); ?>
+
+						    </small>
+                            <a href="mailto:hello@eclipsepd.com">hello@eclipsepd.com</a>
+						  </li>
+						<li>
+						    <small class="icons">
+						        <?php svg("twitter", "white"); ?>
+						    </small>
+						    <a href="http://twitter.com/eclipsepdc">@eclipsepdc</a>
+                        </li>
 					</ul>
 				</section>
 			</section>
